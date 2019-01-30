@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="5"
+    name="Adapter"
+    minApi="7"
+    minBuildApi="14"
+    description="">
+
+    <category value="Custom" />
+    <formfactor value="Mobile" />
+
+    <!-- input data -->
+    
+
+    <parameter
+        id="adapterName"
+        name="Adapter Name"
+        type="string"
+        default="My"
+        help="" />
+
+    <parameter
+        id="beanName"
+        name="Bean Name"
+        type="string"
+        default="MyBean"
+        help="" />
+
+    <parameter
+        id="itemLayoutName"
+        name="Item Layout Name"
+        type="string"
+        default="item_"
+        help="" />
+
+    <!-- 128x128 thumbnails relative to com.puke.template.xml -->
+    <thumbs>
+        <!-- default thumbnail is required -->
+        <thumb>template_cover.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
