@@ -1,6 +1,10 @@
 # CustomTemplate
 Android Studio自定义模版类
 
+### MVPActivity
+
+一键生成MVP结构模版
+
 ### WrapRecyclerView
 
 RecyclerView包装类，RecyclerView添加头布局，尾布局、空布局、Adapter封装。
