@@ -17,15 +17,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 
-/**
- * 关怀金列表的适配器
- * <p>
- * 作者： 周旭 on 2017/4/25/0025.
- * 邮箱：374952705@qq.com
- * 博客：http://www.jianshu.com/u/56db5d78044d
- */
 
-public class ${adapterName}Adapter extends RecyclerViewAdapterHelper<${beanName}> {
+
+public class ${adapterName}Adapter extends BaseRecyclerViewAdapter<${beanName}> {
 
 
     public ${adapterName}Adapter(Context mContext, List<${beanName}> mList) {
@@ -34,24 +28,24 @@ public class ${adapterName}Adapter extends RecyclerViewAdapterHelper<${beanName}
 
     @Override
     public RecyclerView.ViewHolder onCreateMyViewHolder(ViewGroup parent, int viewType) {
-        return new ${adapterName}ViewHolder(inflater.inflate(R.layout.${itemLayoutName}, parent, false));
+        return new ContentViewHolder(inflater.inflate(R.layout.${itemLayoutName}, parent, false));
     }
 
     @Override
     public void onBindMyViewHolder(RecyclerView.ViewHolder holder, int position) {
-        setData((${adapterName}ViewHolder) holder, position);
+        setData((ContentViewHolder) holder, position);
     }
 
 
     //设置相关数据
-    private void setData(${adapterName}ViewHolder holder, int position) {
+    private void setData(ContentViewHolder holder, int position) {
 
     }
 
 
-    public class ${adapterName}ViewHolder extends RecyclerView.ViewHolder {
+    public class ContentViewHolder extends RecyclerView.ViewHolder {
 
-        public ${adapterName}ViewHolder(View itemView) {
+        public ContentViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
         }
