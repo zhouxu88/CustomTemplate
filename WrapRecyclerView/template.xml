@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="5"
+    name="WrapRecyclerView"
+    minApi="7"
+    minBuildApi="14"
+    description="Wrap RecyclerView">
+
+    <category value="Custom" />
+    <formfactor value="Mobile" />
+
+    <!-- input data -->
+    
+
+    <!-- 128x128 thumbnails relative to com.puke.template.xml -->
+    <thumbs>
+        <!-- default thumbnail is required -->
+        <thumb>template_cover.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
